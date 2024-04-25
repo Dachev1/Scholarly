@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Poppins:wght@200;300;400&family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Rubik:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("../img/scholarly.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 30px;
+  background: linear-gradient(to right, #ad00e4, #ffc9d6);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 80%;
+  min-height: 400px;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 23%;
+}
+
+h1:nth-child(2) {
+  margin-top: 10px;
+}
+
+h1.vrf{
+  color: #ffffff;
+  text-align: center;
+  margin-top: 16%;
+}
+h1.success{
+  color: #ffffff;
+  text-align: center;
+  margin-top: 16%;
+}
+
+.container span {
+  font-size: 12px;
+}
+
+.container a {
+  color: #333;
+  font-size: 13px;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.container button {
+  background-color: #e07dff;
+  color: #fff;
+  font-size: 12px;
+  width: 50%;
+  height: 40px;
+  margin-left: 25%;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.container button.hidden {
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.container form {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  height: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 45%;
+  }
+  h1:nth-child(2) {
+    margin-top: 45%;
+  }
+}

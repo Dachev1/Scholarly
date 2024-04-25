@@ -1,0 +1,153 @@
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 5px;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.user_img{
+  position: absolute;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin-top: 7px;
+}
+
+.hr_nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #ad00e4;
+  border-radius: 10px;
+}
+
+.logo {
+  font-size: 35px;
+  color: #ad00e4;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+}
+
+.navbar a {
+  position: relative;
+  align-items: center;
+  font-size: 18px;
+  color: #ad00e4;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 60px;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ce31ff;
+  transition: 0.3s;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+small {
+  font-size: 15px;
+}
+
+#mySidenav {
+  display: block;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  text-align: left;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  border-right: solid 0px transparent;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+#mySidenav a {
+  padding: 8px 8px 8px 2px;
+  text-decoration: none;
+  top: 2%;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+#mySidenav a:hover {
+  color: #ffffff;
+}
+
+#mySidenav .closebtn {
+  position: absolute;
+  color: #ffffff;
+  top: 0;
+  right: 10px;
+  padding: 0;
+  font-size: 60px;
+}
+
+.sett {
+  cursor: pointer;
+}
+
+span {
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .navbar a {
+    margin-left: 20px;
+  }
+
+  #mySidenav a {
+    font-size: 20px;
+  }
+
+  .navbar a::before {
+    top: 100%;
+  }
+
+  #mySidenav .closebtn {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    font-size: 15px;
+    color: #ad00e4;
+    text-decoration: none;
+  }
+  .navbar a {
+    position: relative;
+    align-items: center;
+    font-size: 15px;
+    color: #ad00e4;
+    font-weight: 500;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Poppins:wght@200;300;400&family=Rubik:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  /* background: #232427; */
+  background-image: url("../img/scholarly.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.setting {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 60%;
+  background-color: blueviolet;
+}
+
+.settings_hr {
+  width: 100%;
+  border: none;
+  background-color: #ffffff;
+  height: 5px;
+}
+
+.container {
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 600px;
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 40px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+}
+.file-upload {
+  margin-top: 50px;
+  height: 270px;
+}
+.file-upload-image {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  margin-top: 7px;
+}
+.submit-btn {
+  background: rgba(255, 255, 255, 0.17);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  text-decoration: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 45px;
+  width: 40%;
+  opacity: 1;
+  border: 3px solid #ad00e4;
+  transition: 400ms;
+}
+.submit-btn:hover {
+  border: 3px solid rgba(255, 255, 255, 0.67);
+  background-color: #ad00e4;
+  color: #ffffff;
+  transition: 200ms;
+}
+@media only screen and (max-width: 1370px) {
+  .file-upload {
+    height: 270px;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .file-upload {
+    height: 270px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: larger;
+  }
+  .file-upload {
+    height: 270px;
+  }
+}

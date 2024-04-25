@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Poppins:wght@200;300;400&family=Rubik:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* box-sizing: content-box; */
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url("../img/scholarly.png");
+  background-repeat: no-repeat;
+  background-size:3000px 3000px;
+  background-position: center;
+  min-height: inherit;
+  width: 100%;
+}
+.container {
+  overflow: auto;  
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  width: 80%;
+  height: 393px;
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 7px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border: 1px solid rgba(255, 255, 255, 0.67);
+}
+.container::-webkit-scrollbar {
+  width: 0.4rem;
+  height: 200px;
+}
+
+.container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 50px;
+}
+
+.container::-webkit-scrollbar-thumb {
+background-color:#ad00e4;
+outline: 1px solid #ad00e4;
+border-radius: 50px;
+}
+.no_messages {
+  text-align: center;
+  align-items: center;
+  padding: 180px 0;
+  height: 390px;
+}
+
+.chathead-link {
+  text-decoration: none;
+  color: #ad00e4;
+}
+
+.chathead:hover {
+  width: 40%;
+  transition: 500ms;
+}
+
+.chathead {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 20%;
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: 1s;
+}
+
+@media only screen and (max-width: 1616px) {
+  .no_messages {
+    text-align: center;
+    align-items: center;
+    padding: 140px 0;
+    height: 340px;
+  }
+  .container {
+    width: 80%;
+    height: 540px;
+  }
+  .chathead{
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .no_messages {
+    text-align: center;
+    align-items: center;
+    padding: 140px 0;
+    height: 340px;
+  }
+  .container {
+    width: 80%;
+    height: 340px;
+  }
+  .chathead{
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 1016px) {
+  .no_messages {
+    text-align: center;
+    align-items: center;
+    padding: 140px 0;
+    height: 340px;
+  }
+  .container {
+    width: 80%;
+    height: 440px;
+  }
+  .chathead{
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 916px) {
+  .no_messages {
+    text-align: center;
+    align-items: center;
+    padding: 140px 0;
+    height: 340px;
+  }
+  .container {
+    width: 80%;
+    height: 340px;
+  }
+  .chathead{
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 816px) {
+  .no_messages {
+    text-align: center;
+    align-items: center;
+    padding: 130px 0;
+    height: 300px;
+  }
+  .container {
+    width: 75%;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 716px) {
+  .no_messages {
+    text-align: center;
+    align-items: center;
+    padding: 120px 0;
+    height: 250px;
+  }
+  .container {
+    width: 70%;
+    height: 250px;
+  }
+  .chathead{
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 616px) {
+  .no_messages {
+    text-align: center;
+    align-items: center;
+    padding: 120px 0;
+    height: 250px;
+  }
+  .container {
+    width: 80%;
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 516px) {
+  .no_messages {
+    text-align: center;
+    align-items: center;
+    padding: 120px 0;
+    height: 250px;
+  }
+  .container {
+    width: 80%;
+    height: 250px;
+  }
+  .chathead{
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .no_messages {
+    text-align: center;
+    align-items: center;
+    padding: 240px 0;
+    height: 250px;
+  }
+  .container {
+    width: 80%;
+    height: 500px;
+  }
+  .chathead{
+    width: 35%;
+  }
+}
+
