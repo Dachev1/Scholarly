@@ -32,13 +32,13 @@ use PHPMailer\PHPMailer\Exception;
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host       = 'smtp.office365.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-        $mail->Username   = 'aramderandonyan05@pgds.org';                     //SMTP username
-        $mail->Password   = 'Aram2005';                               //SMTP password
+        $mail->Username   = '';                     //SMTP username
+        $mail->Password   = '';                               //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
         $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
-        $mail->setFrom('aramderandonyan05@pgds.org', 'Scholarly');
+        $mail->setFrom('', 'Scholarly');
         $mail->addAddress($email, $username);     //Add a recipient
         // $mail->addAddress('ellen@example.com');               //Name is optional
         // $mail->addReplyTo('info@example.com', 'Information');
